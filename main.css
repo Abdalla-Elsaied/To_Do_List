@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kode Mono", monospace;
+    margin: 0;
+    padding: 10px;
+}
+
+.form {
+    width: 70%;
+    transform: translateX(15%);
+    margin: 30px 0;
+    padding: 20px;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form .input {
+    flex: 1;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 10px;
+    background-color: white;
+}
+
+.form .add {
+    padding: 10px 6px;
+    border: none;
+    background-color: rgb(251, 82, 82);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form .add:hover {
+    background-color: rgb(243, 64, 64);
+}
+
+.tasks {
+    width: 70%;
+    transform: translateX(15%);
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.tasks .task {
+
+    background-color: white;
+    position: relative;
+    margin: 10px 0;
+    padding: 10px 8px;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tasks .task.done {
+    opacity: 0.5;
+    background: #f1f1f1;
+    text-decoration: line-through;
+
+}
+
+.tasks .task span.update {
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.tasks .task span.del {
+    background-color: red;
+}
+
+.tasks .task div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks .task span {
+    padding: 6px 3px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.tasks .task span.del:hover {
+    background-color: rgb(230, 56, 56);
+}
+
+.tasks .task span.update:hover {
+    background-color: rgb(56, 56, 230);
+    opacity: 1;
+}
+
+.tasks .task:hover {
+    background-color: #f3f1f1;
+}
+
+.deletAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deletAll .clear {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 6px;
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(251, 82, 82);
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.deletAll .clear:hover {
+    background-color: rgb(243, 64, 64);
+}
